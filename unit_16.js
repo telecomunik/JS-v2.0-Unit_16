@@ -203,13 +203,11 @@ let a12 = document.getElementsByClassName('u-12');
 
 function t12() {
     for (let key in a12) {
-        a12[key].insertAdjacentHTML('beforeend', '12');
+        a12[key].innerHTML += 12;
     }
 }
 
 document.querySelector('.b-12').onclick = t12;
-
-// метод  insertAdjacentHTML() совместно с циклом for in выполнить невозможно - выдает ошибку в консоле.
 
 // Task 13 ============================================!
 /*  Напишите функцию, которая выполняет: при нажатии кнопки, получите div.u-13 с помощью querySelectorAll, переберите циклом for in, допишите в каждый из div число 13 (без пробелов). Если это невозможно - напишите в комментарии.  Действия должны запускаться при вызове функции t13
@@ -219,14 +217,11 @@ let a13 = document.querySelectorAll('.u-13');
 
 function t13() {
     for (let key in a13) {
-        a13[key].insertAdjacentHTML('beforeend', '13');
+        a13[key].innerHTML += 13;
     }
 }
 
 document.querySelector('.b-13').onclick = t13;
-
-// метод  insertAdjacentHTML() совместно с циклом for in выполнить невозможно - выдает ошибку в консоле.
-
 
 // Task 14 ============================================
 /*  Дан массив a14 = [[1,2], [3,4], [5,6]], напишите функцию которая делает из него массив [1,2,3,4,5,6]. Используем for in.
